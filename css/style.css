@@ -1,18 +1,114 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
+
+/* 🎨 Estilos generales del footer */
+.footer {
+  background-color: #111;
+  color: #ddd;
+  padding: 60px 20px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🧭 Secciones */
+.footer-section h3.footer-title {
+  color: #ffc107;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* 🍔 Logo */
+.logo {
+  color: #ffc107;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* 🔗 Enlaces */
+.footer-links {
+  list-style: none;
   padding: 0;
-  background-color: #fff8f0;
 }
 
-header, footer {
-  background-color: #ffb300;
-  color: white;
-  text-align: center;
-  padding: 15px;
+.footer-links li {
+  margin-bottom: 8px;
 }
 
-section {
-  padding: 40px;
-  text-align: center;
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
 }
+
+.footer-links a:hover {
+  color: #ffc107;
+}
+
+/* ⏰ Horarios */
+.footer-section span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-note {
+  margin-top: 8px;
+  font-style: italic;
+  color: #aaa;
+}
+
+/* 📱 Redes sociales */
+.social-icons a {
+  color: #ccc;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+  transform: scale(1.1);
+}
+
+/* 🔻 Línea inferior */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.footer-bottom span {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+/* 📱 Responsividad */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+  }
+}
+
