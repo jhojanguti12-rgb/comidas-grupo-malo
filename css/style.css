@@ -112,3 +112,57 @@
   }
 }
 
+/* ---------------------------------------- */
+/* 🍔 SECCIÓN HERO - Integrante 2 */
+/* ---------------------------------------- */
+
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1606755962773-0f4c56d2f8b0?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* oscurece la imagen */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-hero {
+  background-color: #ff8800;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-hero:hover {
+  background-color: #ff5500;
+}
